@@ -3,3 +3,4 @@
 9a166b7a9e5a0c29936da64db01f0cbeb154e19b c0581c2d69cde1a77a173c34fd98eb9ed8becbad jacobo <mister.jacobo97@gmail.com> 1707198968 +1100	commit: added nvim-tree
 c0581c2d69cde1a77a173c34fd98eb9ed8becbad f24d797c7b921780803ca96ca242473c5ccb74fc jacobo <mister.jacobo97@gmail.com> 1707344671 +1100	commit: added nvim config file
 f24d797c7b921780803ca96ca242473c5ccb74fc 33da1520af4fcfd7ef9668467bdced241855123e jacobo <mister.jacobo97@gmail.com> 1707346628 +1100	commit: added return statement to nvim config
+33da1520af4fcfd7ef9668467bdced241855123e c7e7edbc4f54ed015f6a836f0aeaff0837b9a9a8 jacobo <mister.jacobo97@gmail.com> 1708397762 +1100	commit: changed nvim-tree to show dotfiles

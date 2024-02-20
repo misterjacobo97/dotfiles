@@ -1,0 +1,5 @@
+packages:
+  ubuntu:
+    apt-get:
+    - 'curl'
+    - 'unzip'
