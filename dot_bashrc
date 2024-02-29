@@ -127,4 +127,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # chezmoi
-alias chezmoi='/home/jacobo/bin/chezmoi'
+# alias chezmoi='/home/jacobo/bin/chezmoi'
