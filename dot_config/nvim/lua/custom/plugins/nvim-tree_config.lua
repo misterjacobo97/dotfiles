@@ -1,14 +1,21 @@
 return {
-	'nvim-tree/nvim-tree.lua',
+	"nvim-tree/nvim-tree.lua",
 	lazy = false,
 	dependencies = {
-		'nvim-tree/nvim-web-devicons'
+		"nvim-tree/nvim-web-devicons",
 	},
 	config = function()
 		require("nvim-tree").setup({
 			filters = {
-				dotfiles    = false,
+				dotfiles = false,
 				git_ignored = false,
+			},
+			actions = {
+				change_dir = {
+
+					enable = true,
+					gloabl = false,
+				},
 			},
 		})
 	end,
