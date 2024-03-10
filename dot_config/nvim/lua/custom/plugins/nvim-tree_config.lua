@@ -14,7 +14,7 @@ return {
 				change_dir = {
 
 					enable = true,
-					gloabl = false,
+					global = false,
 				},
 			},
 		})
