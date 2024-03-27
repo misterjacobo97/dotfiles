@@ -5,4 +5,11 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = "number"
 
+-- setup individual lsps
+-- vim.lsp.start({
+-- 	name = "gleam",
+-- 	cmd = { "gleam" },
+-- 	root_dir = vim.fs.dirname(vim.fs.find({ "gleam.toml" }, { upward = true })[1]),
+-- })
+
 return {}

@@ -128,3 +128,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # chezmoi
 # alias chezmoi='/home/jacobo/bin/chezmoi'
+#
+
+# cargo
+export PATH=/home/pomt/.cargo/bin:$PATH
