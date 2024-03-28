@@ -1,0 +1,10 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+
+# install asdf deps
+sudo apt install curl git -y
+
+# clone asdf git
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
+
+{{ end -}}
