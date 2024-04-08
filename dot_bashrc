@@ -135,5 +135,3 @@ export PATH=/home/pomt/.cargo/bin:$PATH
 
 # alias for QHOME / kdb
 export QHOME="$HOME/q"
-export QLIC="$HOME/q"
-export PATH=$HOME/q:$PATH
