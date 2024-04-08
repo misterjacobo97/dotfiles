@@ -1,10 +1,18 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
 
-# install asdf deps
-sudo apt install curl git -y
+	{{ if ne .chezmoi.hostname "nixos" -}}
+	# install asdf deps
+	sudo apt install curl git -y
 
-# clone asdf git
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
+	# clone asdf git
+	git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
+	
+	
+	. "$HOME/.asdf/asdf.sh"
+
+	. "$HOME/.asdf/completions/asdf.bash"
+
+	{{ end -}}
 
 {{ end -}}
