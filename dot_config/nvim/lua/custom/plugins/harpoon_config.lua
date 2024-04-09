@@ -6,8 +6,6 @@ return {
 		local harpoon = require("harpoon")
 		harpoon:setup()
 
-		-- adds to the list
-<<<<<<< HEAD
 		vim.keymap.set("n", "<leader>ha", function()
 			harpoon:list():add()
 		end)
@@ -32,9 +30,11 @@ return {
 		vim.keymap.set("n", "<leader>hr5", function()
 			harpoon:list():replace_at(5)
 		end)
-=======
-		vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end)
->>>>>>> refs/remotes/origin/main
+
+		-- adds to the list
+		vim.keymap.set("n", "<leader>ha", function()
+			harpoon:list():add()
+		end)
 
 		-- quick menu
 		vim.keymap.set("n", "<leader>hm", function()
