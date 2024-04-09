@@ -5,6 +5,8 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = "number"
 
+vim.opt.scrolloff = 999
+
 -- setup individual lsps
 -- vim.lsp.start({
 -- 	name = "gleam",

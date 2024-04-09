@@ -2,9 +2,15 @@
 #!/bin/sh
 
 # install asdf deps
-sudo apt install curl git -y
+sudo apt install curl tar git -y
 
 # clone asdf git
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
+
+# install lua
+cd
+asdf plugin-add lua https://github.com/Stratus3D/asdf-lua.git
+asdf install lua 5.3.2 
+asdf local lua 5.3.2
 
 {{ end -}}
