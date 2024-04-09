@@ -133,5 +133,3 @@ export NVM_DIR="$HOME/.nvm"
 # cargo
 export PATH=/home/pomt/.cargo/bin:$PATH
 
-# alias for QHOME / kdb
-export QHOME="$HOME/q"
