@@ -133,3 +133,4 @@ export NVM_DIR="$HOME/.nvm"
 # cargo
 export PATH=/home/pomt/.cargo/bin:$PATH
 
+# q stuff

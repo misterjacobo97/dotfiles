@@ -17,12 +17,14 @@ sudo apt install curl tar git -y
 
 	. "$HOME/.asdf/completions/asdf.bash"
 
+
+	# install lua
+	cd
+	asdf plugin-add lua https://github.com/Stratus3D/asdf-lua.git
+	asdf install lua 5.3.2 
+	asdf local lua 5.3.2
+
 	{{ end -}}
 
-# install lua
-cd
-asdf plugin-add lua https://github.com/Stratus3D/asdf-lua.git
-asdf install lua 5.3.2 
-asdf local lua 5.3.2
 
 {{ end -}}
