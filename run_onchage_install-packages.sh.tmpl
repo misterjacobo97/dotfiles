@@ -1,10 +1,11 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
 
-# install asdf deps
-sudo apt install curl tar git -y
-
 	{{ if ne .chezmoi.hostname "nixos" -}}
+	
+	# install asdf deps
+	sudo apt install curl tar git -y
+
 	# install asdf deps
 	sudo apt install curl git -y
 
