@@ -13,5 +13,11 @@ vim.opt.scrolloff = 999
 -- 	cmd = { "gleam" },
 -- 	root_dir = vim.fs.dirname(vim.fs.find({ "gleam.toml" }, { upward = true })[1]),
 -- })
-
+vim.cmd [[
+	set expandtab
+	set tabstop=2
+	set shiftwidth=2
+	set smartindent
+	set softtabstop=2
+]]
 return {}
