@@ -16,7 +16,7 @@ Kickstart.nvim is a template for your own configuration.
   If you don't know anything about Lua, I recommend taking some time to read through
   a guide. One possible example:
   - https://learnxinyminutes.com/docs/lua/
-
+"""""""""""""""""""""""""""""""""""""""""/////////////////////////////////////////
 
   And then you can explore or search through `:help lua-guide`
   - https://neovim.io/doc/user/lua-guide.html
@@ -241,26 +241,6 @@ require("lazy").setup({
   { "numToStr/Comment.nvim", opts = {} },
 
   -- Fuzzy Finder (files, lsp, etc)
-  {
-    "nvim-telescope/telescope.nvim",
-    branch = "0.1.x",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "BurntSushi/ripgrep",
-      -- Fuzzy Finder Algorithm which requires local dependencies to be built.
-      -- Only load if `make` is available. Make sure you have the system
-      -- requirements installed.
-      {
-        "nvim-telescope/telescope-fzf-native.nvim",
-        -- NOTE: If you are having trouble with this installation,
-        --       refer to the README for telescope-fzf-native for more instructions.
-        build = "make",
-        cond = function()
-          return vim.fn.executable("make") == 1
-        end,
-      },
-    },
-  },
 
   {
     -- Highlight, edit, and navigate code
@@ -462,7 +442,7 @@ vim.defer_fn(function()
     -- List of parsers to ignore installing
     ignore_install = {},
     -- You can specify additional Treesitter modules here: -- For example: -- playground = {--enable = true,-- },
-    modules = {playground = {enable = true},},
+    modules = { playground = { enable = true } },
     highlight = { enable = true },
     indent = { enable = true },
     incremental_selection = {
