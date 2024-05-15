@@ -137,3 +137,5 @@ export PATH=/home/pomt/.cargo/bin:$PATH
 # $QHOME="/home/jacobo/q/"
 # $QLIC="/home/jacobo/q/"
 # aias q="/home/jacobo/q/ rlwrap -r /q/l64/q"
+
+

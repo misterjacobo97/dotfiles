@@ -1,7 +1,16 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
 
-	{{ if ne .chezmoi.hostname "nixos" -}}
+	{{ if eq .chezmoi.hostname "SYDT1300ATL" -}}
+		# for erlang and elixir
+
+		if [ -e ~/kerl ]; then
+				alias kerl='. ~/kerl'
+		fi
+
+		export PATH=/home/pomt/elixir/bin:$PATH
+	
+	{{ else if ne .chezmoi.hostname "nixos" -}}
 		
 		# install asdf deps
 		sudo apt install curl tar git -y
