@@ -3,6 +3,7 @@ packages:
     brews:
     - 'nvim'
     - 'lua'
+    - 'lazygit'
     dnf:
     - 'cronie'
     - 'cronie-anacron'
