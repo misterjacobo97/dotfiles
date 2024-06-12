@@ -1,5 +1,8 @@
 packages:
   linux:
-    apt-get:
-    - 'curl'
-    - 'unzip'
+    brews:
+    - 'nvim'
+    - 'lua'
+    dnf:
+    - 'cronie'
+    - 'cronie-anacron'

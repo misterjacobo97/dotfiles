@@ -1,45 +1,26 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
 
-	{{ if eq .chezmoi.hostname "SYDT1300ATL" -}}
-		# for erlang and elixir
-
-		if [ -e ~/kerl ]; then
-				alias kerl='. ~/kerl'
-		fi
-
-		export PATH=/home/pomt/elixir/bin:$PATH
-	
-	{{ else if ne .chezmoi.hostname "nixos" -}}
+  {{ if eq .chezmoi.hostname "bazza" -}}
 		
-		# install asdf deps
-		sudo apt install curl tar git -y
+  brew bundle --no-lock --file=/dev/stdin <<EOF
 
-		# install asdf deps
-		sudo apt install curl git -y
+  {{ range .packages.linux.brews -}}
+    brew {{ . | quote }}
+  {{ end -}}
 
+		## # install nvim
+		## brew install nvim
+		##
+		## # install lua
+		## brew install lua
 
-		# clone asdf git
-		git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
-		
-		
-		. "$HOME/.asdf/asdf.sh"
-
-		. "$HOME/.asdf/completions/asdf.bash"
-
-
-		# install lua
-		cd
-		asdf plugin-add lua https://github.com/Stratus3D/asdf-lua.git
-		asdf install lua 5.3.2 
-		asdf local lua 5.3.2
-	
 		# to install lazygit
-		LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
-		curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-		tar xf lazygit.tar.gz lazygit
-		sudo install lazygit /usr/local/bin
+		## LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+		## curl -Lo "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz" lazygit.tar.gz
+		## tar xf lazygit.tar.gz lazygit
+		## sudo install lazygit /usr/local/bin
 
-	{{ end -}}
+  {{ end -}}
 
 {{ end -}}
