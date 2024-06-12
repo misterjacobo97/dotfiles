@@ -117,21 +117,21 @@ if ! shopt -oq posix; then
 fi
 
 # bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH=$BUN_INSTALL/bin:$PATH
+# export BUN_INSTALL="$HOME/.bun"
+# export PATH=$BUN_INSTALL/bin:$PATH
+#
+# PATH=~/.console-ninja/.bin:$PATH
 
-PATH=~/.console-ninja/.bin:$PATH
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # chezmoi
 # alias chezmoi='/home/jacobo/bin/chezmoi'
 
 
 # cargo
-export PATH=/home/pomt/.cargo/bin:$PATH
+# export PATH=/home/pomt/.cargo/bin:$PATH
 
 # q stuff
 # $QHOME="/home/jacobo/q/"
