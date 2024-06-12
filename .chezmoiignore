@@ -1,0 +1,5 @@
+README.md
+
+{{ if eq .chezmoi.hostname "bazza" }}
+    #ignore bashrc on the bazzite OS
+{{ end }}
