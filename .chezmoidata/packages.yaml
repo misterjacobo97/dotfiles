@@ -2,8 +2,10 @@ packages:
   linux:
     brews:
     - 'nvim'
+    - 'eslint'
     - 'lua'
     - 'lazygit'
+    - 'node'
     dnf:
     - 'cronie'
     - 'cronie-anacron'
