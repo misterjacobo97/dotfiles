@@ -3,6 +3,8 @@ packages:
     brews:
     - 'nvim'
     - 'eslint'
+    - 'typescript'
+    - 'typescript-language-server'
     - 'lua'
     - 'lazygit'
     - 'node'
