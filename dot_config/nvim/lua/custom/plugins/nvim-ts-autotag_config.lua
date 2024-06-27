@@ -1,3 +1,4 @@
+-- autotags for html <></>
 return {
 	"windwp/nvim-ts-autotag",
 	config = function()
