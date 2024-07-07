@@ -8,6 +8,9 @@ packages:
     - 'lua'
     - 'lazygit'
     - 'node'
+    - 'pylint'
+    - 'fd'
+    - 'uv'
     dnf:
     - 'cronie'
     - 'cronie-anacron'
