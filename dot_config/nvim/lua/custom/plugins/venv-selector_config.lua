@@ -11,7 +11,13 @@ return {
 	lazy = false,
 	branch = "regexp", -- This is the regexp branch, use this for the new version
 	config = function()
-		require("venv-selector").setup()
+		require("venv-selector").setup({
+			settings = {
+				options = {
+					notify_user_on_venv_activation = true,
+				},
+			},
+		})
 	end,
 	keys = {
 		{ ",v", "<cmd>VenvSelect<cr>" },
