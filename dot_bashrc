@@ -116,5 +116,20 @@ if ! shopt -oq posix; then
   fi
 fi
 
+case $HOSTNAME in
+    ("ChelseasPC")
+	# custom path bins
+	export PATH="/mnt/c/Users/chels/My Documents/jacobwashere/bin":$PATH
+	# node and nvm
+	export NVM_DIR="$HOME/.nvm"
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-PATH=$PATH:"/home/linuxbrew/.linuxbrew/bin"
+	#bun
+	export PATH="$HOME/.bun/bin":$PATH
+	;;
+    ("Bazza")
+	export PATH=$PATH:"/home/linuxbrew/.linuxbrew/bin"
+	;;
+    (*) echo "no hostname matched";;
+esac

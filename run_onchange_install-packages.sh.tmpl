@@ -1,11 +1,12 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
-
+  
   {{ if eq .chezmoi.hostname "bazza" -}}
 		
-  brew bundle --no-lock --file=/dev/stdin <<EOF
-
-  {{ range .packages.linux.brews -}}
+    brew bundle --no-lock --file=/dev/stdin <<EOF
+    export PATH=$PATH:"/home/linuxbrew/.linuxbrew/bin"
+  
+    {{ range .packages.linux.brews -}}
     brew {{ . | quote }}
   {{ end -}}
 
